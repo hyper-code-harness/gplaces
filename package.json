@@ -1,12 +1,19 @@
 {
   "name": "gplaces",
-  "private": true,
+  "version": "1.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hyper-code-harness/gplaces"
+  },
   "procs": {
     "src": "src",
     "label": "Google Places",
     "icon": "ph-map-pin",
     "optional": true,
     "description": "Find nearby places and retrieve addresses, opening hours, ratings, reviews, and photos."
+  },
+  "scripts": {
+    "test": "bun ${HYPER_CODE:-../hyper-code}/script/plugin-test.ts ."
   }
 }
